@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Holidays!</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="shortcut icon" href="photos/favicon.ico" type="image/x-icon" />
+
+  
+</head>
+
+<body>
+  <section id=timeline>
+	<h1 id="holidayHeader"></h1>
+
+
+	<!-- E-card Section -->
+	<div id="friendPhoto" style="width: 100%;"></div>
+
+	<p class="card-default"> It’s been a roller coaster of a year, but I’ve been endlessly grateful to have your friendship through it. </p>
+	<p class="card-default" id="personalizedMsg"></p>
+	<p class="card-default">With love from SF, Allison </p>
+
+	<!-- Year in Review Section -->
+	<h1> Allison's Year in Review </h1>
+
+	<h2> 🏆 Things I'm Proud Of </h2>
+	<ol class="card-default" type="1">
+	  <li>
+	  	1. First full year of living in my own place
+	  </li>
+	  <li>
+	  	2. Broke some running PRs:
+	  	<table>
+			  <tr>
+			    <th>1 mile</th>
+			    <th>5k</th>
+			    <th>10k</th>
+			    <th>Half-marathon</th>
+			  </tr>
+			  <tr>
+			    <td>TODO</td>
+			    <td>TODO</td>
+			    <td>TODO</td>
+			    <td>TODO</td>
+			  </tr>
+			</table>
+	  </li>
+	  <li>
+	  	3. Fell in love with a new hobby (bouldering)
+	  </li>
+	</ol>
+
+	<h2 style="margin-bottom: 0;"> 📸 Outtakes Timeline </h2>
+
+		<div class="demo-card demo-card--step1">
+			<div class="head">
+				<div class="number-box">
+					<span>🏠</span>
+				</div>
+				<h2><span class="small">Jan 01</span>Settling into SF</h2>
+			</div>
+			<div class="body">
+				<p>I moved in November 2020, but stopped sitting on the floor while watching TV and got ✨throw pillows✨ (in my brain, the mark of true adulthood) </p>
+				<img src="photos/timeline/0101.jpg" alt="Graphic">
+			</div>
+		</div>
+
+		<div class="demo-card demo-card--step2">
+			<div class="head">
+				<div class="number-box">
+					<span>🪨</span>
+				</div>
+				<h2><span class="small">Feb 13</span>First-ever outdoor bouldering trip</h2>
+			</div>
+			<div class="body">
+				<p>Went to Bishop, CA and nearly fell off of Celestial Trail but made it back in 1 piece and with a new passion. </p>
+				<img src="photos/timeline/0213.jpg" alt="Graphic">
+			</div>
+		</div>
+
+		<div class="demo-card demo-card--step3">
+			<div class="head">
+				<div class="number-box">
+					<span>🏃‍♀️</span>
+				</div>
+				<h2><span class="small">Mar 19</span>First-ever half-marathon</h2>
+			</div>
+			<div class="body">
+				<p>Was virtual because of COVID, but ran with my Lyft PM team.</p>
+			</div>
+		</div>
+
+		<div class="demo-card demo-card--step4">
+			<div class="head">
+				<div class="number-box">
+					<span>&#127874;</span>
+				</div>
+				<h2><span class="small">Apr 12</span>Baby bro turned 20</h2>
+			</div>
+			<div class="body">
+				<p>Virtually celebrated...again, because of COVID.</p>
+				<img src="photos/timeline/0412.jpg" alt="Graphic">
+			</div>
+		</div>
+
+		<div class="demo-card demo-card--step5">
+			<div class="head">
+				<div class="number-box">
+					<span>✈️</span>
+				</div>
+				<h2><span class="small">May 15</span>Anthony's father's wedding</h2>
+			</div>
+			<div class="body">
+				<p>Flew (first time since being fully vaxxed) to LA.</p>
+				<img src="photos/timeline/0515.jpg" alt="Graphic">
+			</div>
+		</div>
+
+
+		<p class="card-default">Here’s to a new year, but in the meantime, please do get some much deserved rest, relaxation, and quality time with loved ones. Hope to see you soon! 💖</p>
+
+	</section>
+
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+<script>
+	window.sr = ScrollReveal({ reset: true });
+	sr.reveal('.demo-card', { duration: 800 });
+	sr.reveal('.ending', { duration: 800 });
+</script>
+
+<script type="text/javascript">
+	document.getElementById("holidayHeader").innerHTML = "Happy Holidays, " + localStorage.getItem("name") + "!";
+	document.getElementById("personalizedMsg").innerHTML = localStorage.getItem("msg");
+</script>
+
+<script type="text/javascript">
+	var img = document.createElement("img");
+	img.style.cssText = "width:90%;display:block;margin-left:auto;margin-right:auto;width: 50%;"; 
+  img.src = "photos/friends/" + localStorage.name + ".jpg";
+
+  var div = document.getElementById("friendPhoto");
+  div.appendChild(img);
+</script>
+  
+</body>
+</html>
