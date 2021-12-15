@@ -1,0 +1,14 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: #e7e0d6;
+}
+
+input {
+  border: none;
+}
+
+#myButton {
+  font-family: 'Poiret One', cursive;
+  border-color: lightgrey;
+}

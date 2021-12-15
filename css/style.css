@@ -11,7 +11,8 @@
 
 /* Fonts */
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poiret One', cursive;
+  background-color: #e7e0d6;
 }
 
 #timeline {
@@ -21,7 +22,10 @@ body {
   text-align: center;
   font-size: 3rem;
   font-weight: 200;
-  margin-bottom: 20px;
+  background-color: #fa636c;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: white;
 }
 #timeline h2 {
   text-align: center;
@@ -68,8 +72,9 @@ table, th, td {
 }
 
 th {
-  background-color: #FE65b7;
+  background-color: #fa636c;
   font-weight: bold;
+  color: white;
 }
 
 li {
@@ -186,32 +191,32 @@ li {
   width: 100%;
 }
 #timeline .demo-card--step1 {
-  background-color: #C578CC;
+  background-color: #fa636c;
 }
 #timeline .demo-card--step1 .head::after {
-  border-color: #C578CC;
+  border-color: #fa636c;
 }
 #timeline .demo-card--step2 {
-  background-color: #FE65b7;
+  background-color: #ff9492;
 }
 #timeline .demo-card--step2 .head::after {
-  border-color: #FE65b7;
+  border-color: #ff9492;
 }
 #timeline .demo-card--step3 {
-  background-color: #E9C904;
+  background-color: #8ea763;
 }
 #timeline .demo-card--step3 .head::after {
-  border-color: #E9C904;
+  border-color: #8ea763;
 }
 #timeline .demo-card--step4 {
-  background-color: #8FC33A;
+  background-color: #bdd59b;
 }
 #timeline .demo-card--step4 .head::after {
-  border-color: #8FC33A;
+  border-color: #bdd59b;
 }
 #timeline .demo-card--step5 {
-  background-color: #62EDD6;
+  background-color: #65805f;
 }
 #timeline .demo-card--step5 .head::after {
-  border-color: #62EDD6;
+  border-color: #65805f;
 }
