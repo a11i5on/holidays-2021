@@ -32,7 +32,7 @@ function checkEntry(){
 		storage.setItem("time_elapsed_yrs", data[name].time_elapsed_yrs);
 		storage.setItem("time_elapsed_mos", data[name].time_elapsed_mos); 
 		storage.setItem("msg", data[name].msg); 
-		window.location.href = "index.html";
+		window.location.href = "card.html";
 	} 
 }
 
