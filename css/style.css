@@ -78,6 +78,11 @@ li {
   margin-bottom: 0.5rem;
 }
 
+.climbingVid {
+  display: block;
+  width: 100%;
+}
+
 @media (min-width: 1000px) {
   #timeline .demo-card-wrapper {
     display: flex;
