@@ -1,4 +1,4 @@
-window.sr = ScrollReveal({ reset: true });
+window.sr = ScrollReveal({ reset: false });
 sr.reveal('.demo-card', { duration: 800 });
 sr.reveal('.ending', { duration: 800 });
 
